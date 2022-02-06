@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
-
 <body>
   <header>
     <nav class="navbar navbar-light bg-transparent">
@@ -33,26 +32,36 @@
     <div class="containerConvertidor">
     <div class="container" id="containerCambio">
       <div class="row">
+        <p id="saludo"></p>
         <div class="col" id="columnaMonedas">
-          <p class="textoInputs">seleccione moneda a enviar</p>
-          <select name="monedas">
-
-            <option>Dolar</option>
-
-            <option>Peso argentino</option>
-
-            <option selected>Euro</option>
-
-          </select>
+          <p class="textoInputs">seleccione moneda a cambiar</p>
+          <div id="selectorMoneda" onchange="showValue()">
+          </div>
+          <p id="muestraCambio"></p>
         </div>
+        <P class="resultado">
+        </P>
         <div class="col" id="columnaCambio">
           <form name="formulario">
             <p class="textoInputs">ingrese monto :</p>
-            <input type="number" id="valor" min="1" max="10000">
+            <input type="number" id="valorPeso" min="1" max="100000">
           </form>
         </div>
         <div class="col">
-          <input type="button" class="btn btn-danger" id="cotizador" value="cotizar">
+          <input type="button" id="cotizador" value="COTIZAR" >
+        </div>
+        <div>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Cambio a agregar</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Valor de la moneda en $ARG</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-danger">Enviar</button>
+          </form>
         </div>
       </div>
     </div>
@@ -64,8 +73,9 @@
       © 2022 - 2022 convertgenerator.com - All Rights Reserved.
     </div>
   </footer>
-  <script src="main.js">
-  </script>
+<script src="jquery.3.5.1.js"></script>
+<script src="main.js">
+</script>
 </body>
 
 </html>
