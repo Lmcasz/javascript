@@ -38,9 +38,10 @@ body {
     font-weight: bold;
 }
 .textoInputs {
-    margin: 0px;
+    margin-bottom: 10px;
     font-family: 'Roboto Slab', serif;
     font-weight: bolder;
+
 }
 .textoConversor {
     font-size: 30px;
@@ -61,7 +62,9 @@ body {
 
 input {
     border-radius: 4px;
-    width: 160px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
 }
 select {
     border-radius: 4px;
@@ -79,3 +82,34 @@ footer {
     font-family: 'Roboto Slab', serif;
     font-weight: bolder;
 }
+#cotizador {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#resultado {
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(105, 101, 101);
+    width: 160px;
+    border-radius: 20px;
+    margin-left: 70px;
+    color: white;
+    }
+#muestraCambio {
+    text-align: left;
+    font-size: 15px;
+    width: 300px;
+    margin-top: 10px;
+    font-family:'Roboto Slab', serif;
+    font-weight: bold;
+  }
+  #selectMonedas{
+    border-radius: 4px;
+    width: 150px;
+    height: 40px;
+    font-family:'Roboto Slab', serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bolder;
+  }

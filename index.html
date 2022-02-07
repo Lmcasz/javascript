@@ -32,23 +32,22 @@
     <div class="containerConvertidor">
     <div class="container" id="containerCambio">
       <div class="row">
-        <p id="saludo"></p>
         <div class="col" id="columnaMonedas">
-          <p class="textoInputs">seleccione moneda a cambiar</p>
+          <p class="textoInputs">Seleccione moneda a cambiar</p>
           <div id="selectorMoneda" onchange="showValue()">
           </div>
           <p id="muestraCambio"></p>
         </div>
-        <P class="resultado">
-        </P>
         <div class="col" id="columnaCambio">
           <form name="formulario">
-            <p class="textoInputs">ingrese monto :</p>
+            <p class="textoInputs">Ingrese monto :</p>
             <input type="number" id="valorPeso" min="1" max="100000">
           </form>
         </div>
         <div class="col">
-          <input type="button" id="cotizador" value="COTIZAR" >
+          <input type="button" id="cotizador" value="cotizar" class="btn btn-danger" onclick="cotizar()" >
+          <p id="resultado">
+          </P>
         </div>
         <div>
           <form>
@@ -75,6 +74,9 @@
   </footer>
 <script src="jquery.3.5.1.js"></script>
 <script src="main.js">
+  $('#cotizador').click(function(){
+  $('#resultado').fadeIn(1000);
+});
 </script>
 </body>
 

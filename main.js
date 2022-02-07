@@ -61,10 +61,17 @@ function init() {
 
 }
 window.onload = init;
-
+////////// Mostrar el valor de la diviza seleccionada //////
 function showValue () {
   var valores = document.getElementById("selectMonedas").value;
-  document.getElementById("muestraCambio").innerHTML = "El valor de la moneda seleccionada es "+ valores;
+  document.getElementById("muestraCambio").innerHTML = "El valor de la moneda elegida es $"+ valores;
 console.log(valores)}
-
-
+////////// Evento cotizacion //////
+function cotizar () {
+  var monto = document.getElementById("valorPeso").value;
+  var divisa = document.getElementById("selectMonedas").value;
+  resultado = 0;
+  var result = monto/divisa;
+  document.getElementById("resultado").innerHTML = "$"+result.toFixed(2) ;
+  console.log(monto)
+}
