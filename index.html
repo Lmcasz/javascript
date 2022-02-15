@@ -13,6 +13,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <title>Document</title>
+  <script src="jquery 3.6.js"></script>
 </head>
 <body>
   <header>
@@ -30,37 +31,46 @@
       <h1 class="titulo">Convertidor de divisas</h1>
     </div>
     <div class="containerConvertidor">
-    <div class="container" id="containerCambio">
-      <div class="row">
+      <div class="row" id="containerCambio">
         <div class="col" id="columnaMonedas">
           <p class="textoInputs">Seleccione moneda a cambiar</p>
           <div id="selectorMoneda" onchange="showValue()">
           </div>
-          <p id="muestraCambio"></p>
         </div>
         <div class="col" id="columnaCambio">
           <form name="formulario">
             <p class="textoInputs">Ingrese monto :</p>
-            <input type="number" id="valorPeso" min="1" max="100000">
+            <input type="number" id="valorPeso" class="form-control" min="1" max="100000">
+            <p id="muestraCambio"></p>
           </form>
         </div>
-        <div class="col">
-          <input type="button" id="cotizador" value="cotizar" class="btn btn-danger" onclick="cotizar()" >
-          <p id="resultado">
-          </P>
+        <div class="col" id="columnaCambio" >
+          <input type="button" id="cotizador" value="cotizar" class="btn btn-danger" onclick="cotizar(), tabla()" >
+          <div id="resultado">
+            <p id="resultadoTexto"></p>
+          </div>
         </div>
-        <div>
-          <form>
+          <div class="row" id="containerForm">
+          <form id="formAgregar" >
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Cambio a agregar</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="text" class="form-control" id="inputNuevaMoneda">
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Valor de la moneda en $ARG</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="text" class="form-control" id="inputNuevoValor">
             </div>
-            <button type="submit" class="btn btn-danger">Enviar</button>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Pais de origen</label>
+              <input type="text" class="form-control" id="inputNuevoPais">
+            </div>
+            <button type="submit" class="btn btn-danger">Agregar</button>
           </form>
+          <div class="mb-3"> 
+              <table id="resultadosTabla">
+                
+              </table>
+          </div>
         </div>
       </div>
     </div>
@@ -68,15 +78,12 @@
   </main>
 
   <footer>
-    <div class="copyright" align="center">
+    <div class="copyright container-fluid" align="center">
       © 2022 - 2022 convertgenerator.com - All Rights Reserved.
     </div>
   </footer>
-<script src="jquery.3.5.1.js"></script>
+<script src="jquery.js"></script>
 <script src="main.js">
-  $('#cotizador').click(function(){
-  $('#resultado').fadeIn(1000);
-});
 </script>
 </body>
 

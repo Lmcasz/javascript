@@ -9,12 +9,15 @@ body {
     background-size: 100% 400px;
     
 }
+main {
+    height: fit-content;
+}
 .containerConvertidor {
     background-color: rgb(240, 240, 240);
     border-radius: 10px;
-    width: 50%;
-    margin-left: 25%;
-    height: 500px;
+    width: 80%;
+    margin-left: 150px;
+    height:800px;
     box-shadow: 11px 12px 16px -5px rgba(0,0,0,0.41);
     -webkit-box-shadow: 11px 12px 16px -5px rgba(0,0,0,0.41);
     -moz-box-shadow: 11px 12px 16px -5px rgba(0,0,0,0.41);
@@ -55,6 +58,7 @@ body {
 }
 #columnaMonedas {
     justify-content: center;
+    height: 100px;
 }
 #columnaCambio {
     justify-content: center;
@@ -72,7 +76,6 @@ select {
 }
 footer {
     background-color: rgb(59, 59, 59);
-    position: absolute;
     bottom: 0;
     width: 100%;
     color: white;
@@ -88,28 +91,73 @@ footer {
     letter-spacing: 3px;
 }
 #resultado {
-    text-align: center;
+    position: relative;
+    display: none;
     font-size: 40px;
     background-color: rgb(105, 101, 101);
-    width: 160px;
-    border-radius: 20px;
-    margin-left: 70px;
+    width: fit-content;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
+    padding: 0px;
+
     }
+
 #muestraCambio {
     text-align: left;
     font-size: 15px;
     width: 300px;
-    margin-top: 10px;
+    padding: 10px;
     font-family:'Roboto Slab', serif;
     font-weight: bold;
+    
   }
   #selectMonedas{
     border-radius: 4px;
-    width: 150px;
+    width: 250px;
     height: 40px;
     font-family:'Roboto Slab', serif;
     text-align: center;
     letter-spacing: 2px;
     font-weight: bolder;
   }
+  #selectMonedas:hover{
+    box-shadow: 10px 10px 30px -3px rgba(0,0,0,0.87);
+    transition: 2s;
+    border-color: red;
+  }
+  #valorPeso:hover {
+      border-color: black;
+      box-shadow: 2px black;
+  }
+  #inputNuevaMoneda{
+      width: 200px;
+  }
+  #inputNuevaMoneda:hover{
+    box-shadow: 10px 10px 30px -3px rgba(0,0,0,0.87);
+    transition: 3s;
+}
+  #inputNuevoValor{
+      width: 200px;
+  }
+  #inputNuevoValor:hover{
+    box-shadow: 10px 10px 30px -3px rgba(0,0,0,0.87);
+    transition: 3s;
+}
+
+  #inputNuevoPais{
+      width: 200px;
+  }
+  #inputNuevoPais:hover{
+    box-shadow: 10px 10px 30px -3px rgba(0,0,0,0.87);
+    transition: 3s;
+}
+  #formAgregar {
+      padding: 0px;
+    margin-top: 0px;
+  }
+footer {
+    height: 25px;
+    bottom: 0px;;
+}
