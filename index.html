@@ -33,13 +33,13 @@
     <div class="containerConvertidor">
       <div class="row" id="containerCambio">
         <div class="col" id="columnaMonedas">
-          <p class="textoInputs">Seleccione moneda a cambiar</p>
+          <p class="textoInput1">Seleccione moneda a cambiar</p>
           <div id="selectorMoneda" onchange="showValue()">
           </div>
         </div>
         <div class="col" id="columnaCambio">
           <form name="formulario">
-            <p class="textoInputs">Ingrese monto :</p>
+            <p class="textoInput2">Ingrese monto :</p>
             <input type="number" id="valorPeso" class="form-control" min="1" max="100000">
             <p id="muestraCambio"></p>
           </form>
@@ -51,6 +51,7 @@
           </div>
         </div>
           <div class="row" id="containerForm">
+            <div class="col" id="containerForm">
           <form id="formAgregar" >
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Cambio a agregar</label>
@@ -68,9 +69,11 @@
           </form>
           <div class="mb-3"> 
               <table id="resultadosTabla">
-                
+
               </table>
           </div>
+        </div>
+      </div>
         </div>
       </div>
     </div>

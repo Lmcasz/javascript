@@ -15,8 +15,8 @@ main {
 .containerConvertidor {
     background-color: rgb(240, 240, 240);
     border-radius: 10px;
-    width: 80%;
-    margin-left: 150px;
+    width: 60%;
+    margin-left: 350px;
     height:800px;
     box-shadow: 11px 12px 16px -5px rgba(0,0,0,0.41);
     -webkit-box-shadow: 11px 12px 16px -5px rgba(0,0,0,0.41);
@@ -40,7 +40,14 @@ main {
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
 }
-.textoInputs {
+.textoInput1 {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+
+}
+.textoInput2 {
     margin-bottom: 10px;
     font-family: 'Roboto Slab', serif;
     font-weight: bolder;
@@ -94,15 +101,24 @@ footer {
     position: relative;
     display: none;
     font-size: 40px;
-    background-color: rgb(105, 101, 101);
+    border-color: #B3B3B3;
+    background-color: #D6D6D6;
+    border-style:double;
     width: fit-content;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     color: white;
     padding: 0px;
+    height: 55px;
+    margin-top: 25px;
 
     }
+#resultadoTexto {
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 30px;
+}
 
 #muestraCambio {
     text-align: left;
@@ -121,6 +137,7 @@ footer {
     text-align: center;
     letter-spacing: 2px;
     font-weight: bolder;
+    margin-left: 30px;
   }
   #selectMonedas:hover{
     box-shadow: 10px 10px 30px -3px rgba(0,0,0,0.87);
@@ -160,4 +177,16 @@ footer {
 footer {
     height: 25px;
     bottom: 0px;;
+}
+#columnaCambio.col {
+    display: flex;
+    justify-content: center;
+    
+}
+.btn {
+    margin-top: 33px;
+    margin-left: 20px;
+}
+#containerForm {
+    margin-left: 10px;
 }
