@@ -3,7 +3,7 @@ $("#cotizador").on("click", function(){
 })
 $("#cotizador").on("click", function(){
 $(".d-inline-block").animate({
-    'margin-left': '900px'
+    'margin-left': '800px'
     },
      2000, function() {
         $(".d-inline-block").animate({ borderSpacing: -2160}, {
@@ -15,3 +15,14 @@ $(".d-inline-block").animate({
             duration:2000
         },'linear')})
     })
+////////////////////mostrar el form//////////////////
+$(".btnAgregarMostrar").click(() => {
+    $("#formAgregar").fadeIn(5000)
+    $(".btnAgregarMostrar").hide(10);
+  })
+
+////////////////mostrar form cryptos//////////////////
+$(".btnMostrarCryptos").click(() => {
+    $("#cryptoForm").fadeIn(5000)
+    $(".btnMostrarCryptos").hide(10);
+  })
